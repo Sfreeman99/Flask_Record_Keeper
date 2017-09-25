@@ -2,10 +2,16 @@ table,
 th,
 thead,
 tr,
-td {
+td,
+tbody {
+    text-align: center;
     border: 1px solid forestgreen;
-    padding: 25px;
+    padding: 35px;
 }
 .body {
     background-color: pink;
+}
+
+h1 {
+    text-align: center;
 }
