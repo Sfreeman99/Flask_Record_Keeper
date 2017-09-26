@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block title %} Player Data {% endblock %} {% block body %}
+<form action="scores" method="POST">
+    <p>Name:</p>
+    <input type="text" name="username1" size="15" maxlength="30" list="defaultNames" placeholder="First Name" id='player_1' required>
+    <p>Score:</p>
+    <input type="number" name="score1" size="15" maxlength="30" value="0" min="0" id='score_1' required>
+
+    <hr>
+    <p>Name:</p>
+    <input type="text" name="username2" size="15" maxlength="30" list="defaultNames" placeholder="First Name" id='player_2' required>
+    <p>Score:</p>
+    <input type="number" name="score2" size="15" maxlength="30" value="0" min="0" id="score_2" required>
+    <input type="submit" name="Submit" value="Submit" a>
+</form>
+<form action='/win_or_lose'>
+    <button>See leaderboard</button><input type="hidden"></form>
+<datalist id="defaultNames">
+    <option value="Jo'Tavious" />
+    <option value="Shedlia" />
+    <option value="Angel" />
+    <option value="Trey" />
+    <option value="Edgar" />
+</datalist>
+{% endblock %}
