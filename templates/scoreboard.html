@@ -13,12 +13,11 @@
     <input type="submit" name="Submit" value="Submit" a>
 </form>
 <form action='/win_or_lose'>
-    <button>See leaderboard</button><input type="hidden"></form>
+    <button>See leaderboard</button><input type="hidden">
+</form>
 <datalist id="defaultNames">
-    <option value="Jo'Tavious" />
-    <option value="Shedlia" />
-    <option value="Angel" />
-    <option value="Trey" />
-    <option value="Edgar" />
+    {% for name in leaderboard %}
+    <option value="{{ name }}" /> {% endfor %}
 </datalist>
+
 {% endblock %}

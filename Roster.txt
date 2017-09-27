@@ -1,8 +1,7 @@
-Name, Wins, Losses, Ties
-Trey | 24 | 4 | 0 | 88.888889 
-Valente | 0 | 3 | 0 | 0.000000 
-Angel | 1 | 1 | 0 | 50.000000 
-Jo | 4 | 11 | 0 | 26.666667 
-Edgar | 7 | 11 | 0 | 35.294118 
-Shedlia | 0 | 9 | 0 | 0.000000 
-Wade | 7 | 3 | 0 | 70.000000 
+Name, Wins, Losses, W/L %
+Jo'tavious | 6 | 14 | 0
+Shedlia | 0 | 11 | 0
+Edgar | 8 | 15 | 0
+Wade | 14 | 3 | 0
+Angel | 3 | 6 | 0
+Trey | 34 | 6 | 0

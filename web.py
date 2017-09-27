@@ -16,9 +16,9 @@ def scoreboard():
 
 @app.route('/scores', methods=['POST'])
 def scores():
-    player_1 = request.form['username1']
+    player_1 = (request.form['username1']).title()
     score_1 = int(request.form['score1'])
-    player_2 = request.form['username2']
+    player_2 = (request.form['username2']).title()
     score_2 = int(request.form['score2'])
     leaderboard = disk.give_roster()
     roster = core.names(leaderboard, player_1)
