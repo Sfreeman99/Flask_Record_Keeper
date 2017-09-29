@@ -13,10 +13,12 @@ def give_roster():
             'Ties':
             int(sublist[3]),
             'W/L':
-            '{:2f}'.format(
-                float(sublist[1]) /
-                (float(float(sublist[1]) + float(sublist[2]))) * 100)
+            str(
+                round(100 * (int(sublist[1]) / max(
+                    1, int(sublist[1]) + int(sublist[2]) + int(sublist[3])))))
+            + '%'
         }
+
     return roster
 
 

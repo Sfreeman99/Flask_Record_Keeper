@@ -32,4 +32,12 @@ def scores():
     return redirect('/win_or_lose')
 
 
+@app.route('/reset', methods=['POST'])
+def reset():
+    leaderboard = disk.give_roster()
+    new_leaderboard = core.reset_leaderboard(leaderboard)
+    disk.dict_to_file(new_leaderboard)
+    return redirect('/win_or_lose')
+
+
 # @app.route('/individual_stats', methods=['POST'])
